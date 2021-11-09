@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
      DEPLOY_TO = "Production" 
-     JOB_TIME = sh (returnStdout: true; script:"date '+%A %W %Y %X'").trim()
+     JOB_TIME = sh (returnStdout: true, script: "date '+%A %W %Y %X'").trim().trim()
         
         
     }
