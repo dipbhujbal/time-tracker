@@ -24,6 +24,7 @@ pipeline {
             steps {
                 echo "${env.BRANCH_NAME}"
                 echo "${env.DEPLOY_TO}"
+                echo "$env.BUILD_NUMBER"
             }
             
         }
