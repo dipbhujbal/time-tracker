@@ -22,8 +22,8 @@ pipeline {
         }
         stage ("Initialization") {
             steps {
-                echo "${BRANCH_NAME}"
-                echo "${DEPLOY_TO}"
+                echo "${env.BRANCH_NAME}"
+                echo "${env.DEPLOY_TO}"
             }
             
         }
